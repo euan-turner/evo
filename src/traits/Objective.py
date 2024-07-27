@@ -6,4 +6,4 @@ import numpy.typing as npt
 
 @dataclass
 class Objective:
-  pos: npt.NDArray[np.float64]
+    pos: npt.NDArray[np.float64]

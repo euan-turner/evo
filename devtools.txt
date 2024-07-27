@@ -1,7 +1,6 @@
-pylint
 pycodestyle
 pytest
 mypy 
 black
 isort
-flack8
+flake8

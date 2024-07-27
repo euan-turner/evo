@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 
 
-@dataclass 
+@dataclass
 class Edible:
-  energy: int
+    energy: int
