@@ -1,6 +1,7 @@
-from dataclasses import dataclass
+from abc import ABC, abstractmethod
 
-
-@dataclass
-class Edible:
-    energy: int
+class Edible(ABC):
+  
+  @abstractmethod
+  def get_energy(self) -> float:
+    pass

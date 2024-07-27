@@ -1,9 +1,10 @@
-from dataclasses import dataclass
+from abc import ABC, abstractmethod
 
 import numpy as np
 import numpy.typing as npt
 
-
-@dataclass
-class Objective:
-    pos: npt.NDArray[np.float64]
+class Objective(ABC):
+    
+    @abstractmethod
+    def get_pos(self) -> npt.NDArray[np.float64]:
+        pass
